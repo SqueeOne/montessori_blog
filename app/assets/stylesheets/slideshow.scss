@@ -1,0 +1,13 @@
+.caption {
+    height: 140px;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+.caption .col-md-4 {
+    border-right: 1px dotted #CCCCCC;
+}
