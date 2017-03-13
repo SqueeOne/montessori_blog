@@ -49,3 +49,21 @@
       </a>
     </div><!-- /.carousel -->
 </div>
+<div class="col-md-6 col-md-offset-3">
+    <div class="index-posts">
+        <ul class="post-scroll">
+            <% @posts.each do |post| %>
+                <li class="post-single">
+                    <h3 class="post-title"><%= post.title %></h3>
+                    <h6 class="post-meta text-right"><%= post.created_at.strftime("%d %b, %Y") %> by: <%= post.author %></h6>
+                    <div class="index-post-body">
+                        <%= raw (post.body).truncate(358) %>
+                    </div>
+                    <div class="btn-group pull-right">
+                        <%= link_to "Read more", post_path(post), :class => "btn btn-primary" %>
+                    </div>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>
