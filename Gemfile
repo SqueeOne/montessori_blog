@@ -25,6 +25,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # Use simple form for form easier form creation
 gem 'simple_form'
 
+# Use ckeditor for WYSIWYG goodies
+gem 'ckeditor'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
