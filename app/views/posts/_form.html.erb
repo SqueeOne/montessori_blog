@@ -24,6 +24,10 @@
     <%= f.input :author, class: "form-control" %>
   </div>
   
+  <div class="form-group">
+    <%= f.select :category, ['0-3', '3-6', '6-12'] %>
+  </div>
+  
   <div class="form-group pull-right">
     <%= f.button :submit %>
   </div>

@@ -1,0 +1,9 @@
+<div class="col-md-6 col-md-offset-3">
+    <% @posts.each do |post| %>
+        <h3><%= post.title %></h3>
+        <h6><%= post.created_at.strftime("%d %b, %Y") %> by: <%= post.author %></h6>
+        <div>
+            <%= raw (post.body).truncate(358) %>
+        </div>
+    <% end %>
+</div>
